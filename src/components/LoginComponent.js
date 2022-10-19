@@ -65,7 +65,7 @@ const LoginComponent = () => {
                     </Link>
                     </p>
                     <div className="form_wrapper_1">
-                    <h3 className="form_title">Sign in to Job Landing</h3>
+                    <h3 className="form_title">Sign in to Rate My Courses</h3>
                     <p className="form_title1">Enter your details below.</p>
                     </div>
                     <form onSubmit={loginValidator}>

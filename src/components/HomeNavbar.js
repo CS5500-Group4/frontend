@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
-import Wrapper from '../asserts/wrappers/HomeNavbar'
+import Wrapper from '../asserts/wrappers/HomeNavbar';
 
 
 const HomeNavbar = () => {

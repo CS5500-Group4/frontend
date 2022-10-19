@@ -71,7 +71,7 @@ const SignupComponent = () => {
             <main className='main'>
         <div className='left'>
           <div className='left_inner'>
-            <p className='text'>Manage the job more effectively with Job Landing</p>
+            <p className='text'>Rate and review your courses on Rate My Courses</p>
             <img className='register_img' src={register} alt="register" />
           </div>
         </div>
