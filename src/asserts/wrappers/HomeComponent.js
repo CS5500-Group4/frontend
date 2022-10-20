@@ -34,7 +34,6 @@ const Wrapper = styled.main`
     justify-content: space-evenly;
     margin-top: 60px;
     align-items: center;
-    box-shadow: rgba(209, 209, 209, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
 
   .icon-text {
@@ -49,12 +48,14 @@ const Wrapper = styled.main`
     width: 250px;
   }
 
-  .bottom-container {
+
+  footer{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    margin-top: 50px;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
 
 `
