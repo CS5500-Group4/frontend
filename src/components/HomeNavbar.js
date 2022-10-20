@@ -11,6 +11,8 @@ const HomeNavbar = () => {
                 <div className='inner_wrapper'>
                     <Link className='link' to='/'><h3 class='title'>Rate My Courses</h3></Link>
                     <span className='vertical_line'></span>
+                    <Link className='link' to="/about"><h4 class='title'>About</h4></Link>
+                    <Link className='link' to="/courses"><h4 class='title'>Courses</h4></Link>
                     <Link className='link' to="/signup"><Button variant="outlined" size="medium">Sign up</Button></Link>
                     <Link className='link' to="/login"><Button variant="contained" size="medium">Login</Button></Link>
                 </div>

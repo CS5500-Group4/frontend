@@ -25,10 +25,11 @@ const Wrapper = styled.main`
     border-left: 2px solid white;
     height: 30px;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 730px;
   }
   .link {
     text-decoration: none;
+    margin: 0 20px;
   }
   Button {
     color: white;
