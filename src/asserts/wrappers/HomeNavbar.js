@@ -25,16 +25,16 @@ const Wrapper = styled.main`
     border-left: 2px solid white;
     height: 30px;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 700px;
   }
   .link {
     text-decoration: none;
+    margin: 0 20px;
   }
   Button {
     color: white;
     border-color: white;
     border-radius: 20px;
-    margin-right: 20px;
     text-decoration: none;
   }
   Button:hover {

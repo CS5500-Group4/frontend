@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 const Wrapper = styled.main`
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 60px;
-  align-items: center;
-
+  .intro-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    align-items: center;
+  }
 
   .home_img {
     width: 600px;
@@ -19,10 +20,42 @@ const Wrapper = styled.main`
   .intro {
       font-size: 35px;
       font-weight: bold;
+      padding-bottom: 20px;
   }
 
   Button {
     border-radius: 8px;
+  }
+
+  .mid-container {
+    padding: 200px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    align-items: center;
+  }
+
+  .icon-text {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+  .icon {
+    width: 250px;
+  }
+
+
+  footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
 
 `
