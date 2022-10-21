@@ -14,18 +14,16 @@ const Wrapper = styled.main`
   .inner_wrapper {
     width: 80%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
+  .inner_wrapper div:nth-child(1){
+    display: flex;
+  }
   .title {
     color: white;
-  }
-  .vertical_line {
-    border-left: 2px solid white;
-    height: 30px;
-    margin-left: 40px;
-    margin-right: 700px;
   }
   .link {
     text-decoration: none;

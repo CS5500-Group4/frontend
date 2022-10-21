@@ -3,9 +3,6 @@ import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import Wrapper from '../asserts/wrappers/AboutComponent';
 import homeImg from '../asserts/images/home.jpg';
-import spaceImg from '../asserts/images/space.png';
-import searchImg from '../asserts/images/investigate.png';
-import reviewImg from '../asserts/images/review.png';
 
 const AboutComponent = () => {
     return (
@@ -27,12 +24,11 @@ const AboutComponent = () => {
                     </ul>
                     <h3>Connect with Us</h3>
                     <div className="connection">
-                        <div>Zanyuan Yang</div>
-                        <div>Siheng Wei</div>
-                        <div>Jinyan Li</div>
-                        <div>Suisui Xia</div>
+                        <a className='no_underline' target="_blank" href="https://www.linkedin.com/in/zanyuan-yang-277562129" rel="noreferrer">Zanyuan Yang</a>
+                        <a className='no_underline' target="_blank" href="https://www.linkedin.com/in/siheng-wei/" rel="noreferrer">Siheng Wei</a>
+                        <a className='no_underline' target="_blank" href="https://www.linkedin.com/in/jinyanl/" rel="noreferrer">Jinyan Li</a>
+                        <a className='no_underline' target="_blank" href="https://www.linkedin.com/in/suisuixia/" rel="noreferrer">Suisui Xia</a>
                     </div>
-
                 </div>
             </div>
 

@@ -2,21 +2,18 @@ import styled from "styled-components";
 
 const Wrapper = styled.main`
     margin-top: 60px;
+    height: 100%;
     .about{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 100px;
-    }
-    .left{
-        width: 30%;
-    }
-    .right{
-        width: 40%;
+        /* display: flex;
+        justify-content: space-evenly;
+        align-items: center; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 100px 0 100px;
     }
 
     .home_img {
-        width: 600px;
+        width: 500px;
         border-radius: 10px;
     }
 
@@ -38,5 +35,19 @@ const Wrapper = styled.main`
         flex-direction: column;
         text-align: center;
     }
+    .no_underline{
+        color:white;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .about{
+            grid-template-columns: 1fr;
+        }
+        footer{
+            position: relative;
+        }
+    }
+
+
 `
 export default Wrapper;
