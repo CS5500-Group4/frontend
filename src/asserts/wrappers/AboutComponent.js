@@ -2,6 +2,15 @@ import styled from "styled-components";
 
 const Wrapper = styled.main`
     margin-top: 60px;
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: #5687f6;
+    }
+
     .about{
         display: flex;
         justify-content: center;
