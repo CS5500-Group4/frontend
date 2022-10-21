@@ -2,7 +2,8 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import Wrapper from '../asserts/wrappers/AboutComponent';
-import homeImg from '../asserts/images/home.jpg';
+import welcomeImg from '../asserts/images/welcome.jpg';
+
 
 const AboutComponent = () => {
     return (
@@ -10,7 +11,7 @@ const AboutComponent = () => {
             <div className="about">
                 <div className="left">
                     <h1>A Course Review PlatformBuilt by Students, for Students.</h1>
-                    <img className='home_img' src={homeImg} alt='Students working together on laptop' />
+                    <img className='home_img' src={welcomeImg} alt='Welcome sign' />
                 </div>
                 <div className="right">
                     <h3>The Team</h3>
@@ -18,7 +19,7 @@ const AboutComponent = () => {
                     <h3>How it works</h3>
                     <ul>
                         <li>You can browse course ratings and reviews as a guest.</li>
-                        <li>If you want to rate a course or post a review, creating an account is easy!</li>
+                        <li>If you want to rate a course or post a review, <a href='/signup'>creating an account</a> is easy!</li>
                         <li>You can post reviews anonymously when logged in, too.</li>
                         <li>You can also add a new course to the platform and be the first to review.</li>
                     </ul>

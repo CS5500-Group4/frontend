@@ -3,17 +3,25 @@ import styled from "styled-components";
 const Wrapper = styled.main`
     margin-top: 60px;
     height: 100%;
+
+    a {
+        color: white;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #5687f6;
+    }
+
     .about{
-        /* display: flex;
-        justify-content: space-evenly;
-        align-items: center; */
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0 100px 0 100px;
+        column-gap: 20px;
     }
 
     .home_img {
-        width: 500px;
+        width: 600px;
         border-radius: 10px;
     }
 
