@@ -1,6 +1,4 @@
 import React from 'react'
-import {Link} from "react-router-dom";
-import Button from '@mui/material/Button';
 import Wrapper from '../asserts/wrappers/AboutComponent';
 import welcomeImg from '../asserts/images/welcome.jpg';
 
@@ -10,12 +8,13 @@ const AboutComponent = () => {
         <Wrapper>
             <div className="about">
                 <div className="left">
-                    <h1>A Course Review PlatformBuilt by Students, for Students.</h1>
+                    <h1>A Course Review Platform<br></br>Built by Students, for Students.</h1>
                     <img className='home_img' src={welcomeImg} alt='Welcome sign' />
                 </div>
                 <div className="right">
                     <h3>The Team</h3>
-                    <p>Four Northeastern University (NEU) students wanted to find the utilmate solution to simplify course planning, and Rate My Courses was born! Our goal is to create an open community for NEU students to rate and review all their courses. We hope you find this platform helpful! </p>
+                    <p>Four Northeastern University (NEU) students wanted to find the utilmate solution to simplify course planning, and Rate My Courses was born! 
+                    Our goal is to create an open community for NEU students to rate and review all their courses. We hope you find this platform helpful! </p>
                     <h3>How it works</h3>
                     <ul>
                         <li>You can browse course ratings and reviews as a guest.</li>
