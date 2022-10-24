@@ -3,11 +3,13 @@ import HomeComponent from './HomeComponent'
 import LoginComponent from './LoginComponent'
 import SignupComponent from './SignupComponent'
 import AboutComponent from './AboutComponent'
+import AddCourseComponent from './AddCourseComponent'
 
 export {
   HomeNavbar,
   HomeComponent,
   LoginComponent,
   SignupComponent,
-  AboutComponent
+  AboutComponent,
+  AddCourseComponent
 }
