@@ -3,6 +3,8 @@ import HomeComponent from './HomeComponent'
 import LoginComponent from './LoginComponent'
 import SignupComponent from './SignupComponent'
 import AboutComponent from './AboutComponent'
+import CourseDetailComponent from './CourseDetailComponent'
+import Footer from './Footer'
 import AddCourseComponent from './AddCourseComponent'
 
 export {
@@ -11,5 +13,7 @@ export {
   LoginComponent,
   SignupComponent,
   AboutComponent,
+  CourseDetailComponent,
+  Footer
   AddCourseComponent
 }

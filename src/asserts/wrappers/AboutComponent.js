@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.main`
-    margin-top: 60px;
     height: 100%;
-
     a {
         color: white;
         transition: 0.3s;
