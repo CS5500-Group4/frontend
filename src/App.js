@@ -3,7 +3,7 @@ import {
 	Routes,
 	Route,
 } from "react-router-dom";
-import { Home, Error, Login, Signup, About, CourseDetail } from './pages';
+import { Home, Error, Login, Signup, About, CourseDetail, AddCourse } from './pages';
 
 function App() {
   return (
@@ -13,7 +13,9 @@ function App() {
 		<Route path="/signup" element={<Signup />} ></Route>
 		<Route path="/about" element={<About />} ></Route>
 		<Route path="/courseDetail" element={<CourseDetail />} ></Route>
+    <Route path="/addcourse" element={<AddCourse />}></Route>
 		<Route path="*" element={<Error />}></Route>
+	
 	</Routes>
   );
 }

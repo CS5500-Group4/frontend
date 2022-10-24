@@ -4,5 +4,7 @@ import Signup from './Signup';
 import About from './About';
 import CourseDetail from './CourseDetail';
 import Error from './Error';
+import AddCourse from "./AddCourse";
 
-export { Home, Login, Signup, About, CourseDetail, Error };
+
+export { Home, Login, Signup, About, CourseDetail, AddCourse, Error };
