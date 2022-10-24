@@ -1,14 +1,14 @@
 import React from 'react'
 import Wrapper from '../asserts/wrappers/HomeNavbar';
-import { HomeNavbar, HomeComponent } from '../components';
+import { HomeNavbar, AddCourseComponent } from '../components';
 
-const Home = (() => {
+const AddCourse = (() => {
   return (
         <Wrapper>
             <HomeNavbar />
-            <HomeComponent />
+            <AddCourseComponent />
         </Wrapper>
   )
 })
 
-export default Home
+export default AddCourse
