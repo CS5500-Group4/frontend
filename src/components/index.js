@@ -14,6 +14,6 @@ export {
   SignupComponent,
   AboutComponent,
   CourseDetailComponent,
-  Footer
+  Footer,
   AddCourseComponent
 }
