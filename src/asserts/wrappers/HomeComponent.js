@@ -5,7 +5,6 @@ const Wrapper = styled.main`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 60px;
     align-items: center;
   }
 

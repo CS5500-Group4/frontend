@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.main`
   width: 100%;
+  margin-bottom: 60px;
   .wrapper {
     width: 100%;
     border-bottom: 0.1px solid white;
