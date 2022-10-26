@@ -6,20 +6,33 @@ const Wrapper = styled.main`
     grid-template-columns: 1fr 1fr 1fr;
 
     .user img{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .action Button{
         display: block;
         margin-bottom: 20px;
+        width: 200px;
     }
 
     .course_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         border: 1px solid white;
         border-radius: 5px;
-        padding: 10px 20px 30px 20px;
+        padding: 10px 20px 10px 20px;
         margin-top: 20px;
+    }
+
+    a {
+        color: white;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #5687f6;
     }
 
 `

@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../asserts/wrappers/DashboardComponent';
 import Button from '@mui/material/Button';
-import avatar from '../asserts/images/welcome.jpg'
+import avatar from '../asserts/images/user.png';
 
 
 const DashboardComponent = () => {
@@ -21,9 +21,10 @@ const DashboardComponent = () => {
             <div className="course">
                 <h3>My Courses</h3>
                 <div className="course_list">
-                    <div>Course 1 - Course Name</div>
-                    <div>Course 2 - Course Name</div>
-                    <div>Course 3 - Course Name</div>
+    {/* todo: Update the courses that link to each course's detail page */}
+                    <a href="">Course 1 - Course Name</a>
+                    <a href="">Course 2 - Course Name</a>
+                    <a href="">Course 3 - Course Name</a>
                 </div>
             </div>
         </Wrapper>
