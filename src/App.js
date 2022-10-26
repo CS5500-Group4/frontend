@@ -3,7 +3,7 @@ import {
 	Routes,
 	Route,
 } from "react-router-dom";
-import { Home, Error, Login, Signup, About, CourseDetail, AddCourse } from './pages';
+import { Home, Error, Login, Signup, About, CourseDetail, AddCourse, Dashboard } from './pages';
 
 function App() {
   return (
@@ -11,11 +11,12 @@ function App() {
 		<Route exact path="/" element={<Home />}></Route>
 		<Route path="/login" element={<Login />} ></Route>
 		<Route path="/signup" element={<Signup />} ></Route>
+		<Route path="/dashboard" element={<Dashboard />} ></Route>
 		<Route path="/about" element={<About />} ></Route>
 		<Route path="/courseDetail" element={<CourseDetail />} ></Route>
-    <Route path="/addcourse" element={<AddCourse />}></Route>
+    	<Route path="/addcourse" element={<AddCourse />}></Route>
 		<Route path="*" element={<Error />}></Route>
-	
+
 	</Routes>
   );
 }

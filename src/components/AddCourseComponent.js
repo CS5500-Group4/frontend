@@ -22,7 +22,7 @@ const AddCourseComponent = () => {
     const courseValidator = async (e) => {
 
     };
-  
+
     return (
         <Wrapper>
             <div className='intro-container'>
@@ -32,7 +32,7 @@ const AddCourseComponent = () => {
             <div className="form_wrapper">
             <form onSubmit={courseValidator}>
                 <div className="form_inner_wrapper">
-                <label for="course_number">Enter Course Number</label>
+                    <label for="course_number">Enter Course Number</label>
                     <input
                         autoComplete="off"
                         type="text"
@@ -43,7 +43,7 @@ const AddCourseComponent = () => {
                     />
                 </div>
                 <div className="form_inner_wrapper">
-                <label for="course_name">Enter Course Name</label>
+                    <label for="course_name">Enter Course Name</label>
                     <input
                         autoComplete="off"
                         type="text"
@@ -59,10 +59,10 @@ const AddCourseComponent = () => {
                     </button>
                 </div>
             </form>
-            
+
             </div>
-            
-            
+
+
             <footer>
                 <p>San Jose, California, USA</p>
                 <p>Copyright © 2022 All Rights Reserved</p>

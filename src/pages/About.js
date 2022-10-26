@@ -1,14 +1,14 @@
 import React from 'react'
-import { ExampleContext } from '../context/context';
-import Wrapper from '../asserts/wrappers/HomeNavbar';
-import { HomeNavbar, AboutComponent } from '../components';
+import Wrapper from '../asserts/wrappers/Container';
+import { HomeNavbar, AboutComponent, Footer } from '../components';
 
 const About = (() => {
   return (
-        <Wrapper>
-            <HomeNavbar />
-            <AboutComponent />
-        </Wrapper>
+    <Wrapper>
+      <HomeNavbar />
+      <AboutComponent />
+      <Footer />
+    </Wrapper>
   )
 })
 
