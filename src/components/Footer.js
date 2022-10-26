@@ -17,6 +17,13 @@ const Wrapper = styled.footer`
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+
+    @media screen and (max-height: 100vh) {
+        position: relative;
+    }
+
 `
 
 export default Footer

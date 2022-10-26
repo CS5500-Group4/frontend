@@ -6,6 +6,7 @@ import AboutComponent from './AboutComponent'
 import CourseDetailComponent from './CourseDetailComponent'
 import Footer from './Footer'
 import AddCourseComponent from './AddCourseComponent'
+import DashboardComponent from './DashboardComponent'
 
 export {
   HomeNavbar,
@@ -15,5 +16,6 @@ export {
   AboutComponent,
   CourseDetailComponent,
   Footer,
-  AddCourseComponent
+  AddCourseComponent,
+  DashboardComponent
 }

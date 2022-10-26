@@ -31,16 +31,6 @@ const Wrapper = styled.main`
         grid-row-gap: 20px;
     }
 
-    footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
     .no_underline{
         color:white;
     }
@@ -48,9 +38,6 @@ const Wrapper = styled.main`
     @media only screen and (max-width: 1000px) {
         .about{
             grid-template-columns: 1fr;
-        }
-        footer{
-            position: relative;
         }
     }
 

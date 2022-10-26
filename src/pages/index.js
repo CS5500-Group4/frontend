@@ -5,6 +5,7 @@ import About from './About';
 import CourseDetail from './CourseDetail';
 import Error from './Error';
 import AddCourse from "./AddCourse";
+import Dashboard from "./Dashboard";
 
 
-export { Home, Login, Signup, About, CourseDetail, AddCourse, Error };
+export { Home, Login, Signup, About, CourseDetail, AddCourse, Dashboard, Error };

@@ -51,10 +51,6 @@ const HomeComponent = () => {
                     <br></br> yourself</p>
                 </div>
             </div>
-            <footer>
-                <p>San Jose, California, USA</p>
-                <p>Copyright © 2022 All Rights Reserved</p>
-            </footer>
         </Wrapper>
     );
 }

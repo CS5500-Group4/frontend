@@ -13,7 +13,7 @@ const AboutComponent = () => {
                 </div>
                 <div className="right">
                     <h3>The Team</h3>
-                    <p>Four Northeastern University (NEU) students wanted to find the utilmate solution to simplify course planning, and Rate My Courses was born! 
+                    <p>Four Northeastern University (NEU) students wanted to find the utilmate solution to simplify course planning, and Rate My Courses was born!
                     Our goal is to create an open community for NEU students to rate and review all their courses. We hope you find this platform helpful! </p>
                     <h3>How it works</h3>
                     <ul>
@@ -31,11 +31,6 @@ const AboutComponent = () => {
                     </div>
                 </div>
             </div>
-
-            <footer>
-                <p>San Jose, California, USA</p>
-                <p>Copyright © 2022 All Rights Reserved</p>
-            </footer>
         </Wrapper>
     );
 }
