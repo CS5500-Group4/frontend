@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import Wrapper from '../asserts/wrappers/AddCourseComponent';
 
 const initialState = {
-  courseNumber: '',
+  courseName: '',
   courseNumber: ''
 }
 
