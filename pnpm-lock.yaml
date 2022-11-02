@@ -8,10 +8,12 @@ specifiers:
   '@testing-library/jest-dom': ^5.16.4
   '@testing-library/react': ^13.2.0
   '@testing-library/user-event': ^13.5.0
+  animate.css: ^4.1.1
   axios: ^0.21.1
   dotenv: ^8.2.0
   eslint: ^7.11.0
   moment: ^2.29.4
+  prettier: ^2.7.1
   react: ^17.0.1
   react-dom: ^17.0.1
   react-icons: ^3.11.0
@@ -28,10 +30,12 @@ dependencies:
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 13.2.0_sfoxds7t5ydpegc3knd667wn6m
   '@testing-library/user-event': 13.5.0
+  animate.css: 4.1.1
   axios: 0.21.4
   dotenv: 8.6.0
   eslint: 7.32.0
   moment: 2.29.4
+  prettier: 2.7.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-icons: 3.11.0_react@17.0.2
@@ -3226,6 +3230,10 @@ packages:
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
       uri-js: 4.4.1
+    dev: false
+
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
     dev: false
 
   /ansi-colors/4.1.1:
@@ -8350,6 +8358,12 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: false
+
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: false
 
   /pretty-bytes/5.6.0:

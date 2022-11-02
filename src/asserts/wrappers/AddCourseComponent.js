@@ -86,9 +86,21 @@ const Wrapper = styled.main`
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    position: fixed:
+    position: fixed;
     bottom: 0;
   }
+
+  .alert {
+    width: 200px;
+    position: fixed;
+    top: 120px;
+    right: 70px;
+  }
+
+  .none {
+    display: none;
+  }
+  
 
 `
 export default Wrapper;
