@@ -11,11 +11,11 @@ const initialState = {
 }
 
 const AddCourseComponent = () => {
-  const [updateStatus, setUpdateStatus] = useState('none')
+  const [status, setStatus] = useState('none')
   const alertFadeIn = () => {
-    setUpdateStatus('success')
+    setStatus('success')
     setTimeout(() => {
-      setUpdateStatus('')
+      setStatus('')
     }, 2000)
   }
 
@@ -78,9 +78,9 @@ const AddCourseComponent = () => {
       </div>
       <Alert
         className={
-          updateStatus === 'success'
+          status === 'success'
             ? 'alert animate__animated animate__fadeInRight'
-            : updateStatus === 'none'
+            : status === 'none'
             ? 'none'
             : 'alert animate__animated  animate__fadeOutRight'
         }
