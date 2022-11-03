@@ -1,6 +1,18 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Home, Error, Login, Signup, About, CourseDetail, AddCourse, Dashboard, AddReview, CourseList, PrivateRoute } from './pages'
+import {
+  Home,
+  Error,
+  Login,
+  Signup,
+  About,
+  CourseDetail,
+  AddCourse,
+  Dashboard,
+  AddReview,
+  CourseList,
+  PrivateRoute,
+} from './pages'
 
 function App() {
   return (
@@ -9,10 +21,38 @@ function App() {
       <Route path="/login" element={<Login />}></Route>
       <Route path="/signup" element={<Signup />}></Route>
       <Route path="/about" element={<About />}></Route>
-      <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}></Route>
-      <Route path="/courseDetail/:id" element={<PrivateRoute><CourseDetail /></PrivateRoute>}></Route>
-      <Route path="/addcourse" element={<PrivateRoute><AddCourse /></PrivateRoute>}></Route>
-      <Route path="/addreview" element={<PrivateRoute><AddReview /></PrivateRoute>}></Route>
+      <Route
+        path="/dashboard"
+        element={
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        }
+      ></Route>
+      <Route
+        path="/courseDetail/:id"
+        element={
+          <PrivateRoute>
+            <CourseDetail />
+          </PrivateRoute>
+        }
+      ></Route>
+      <Route
+        path="/addcourse"
+        element={
+          <PrivateRoute>
+            <AddCourse />
+          </PrivateRoute>
+        }
+      ></Route>
+      <Route
+        path="/addreview"
+        element={
+          <PrivateRoute>
+            <AddReview />
+          </PrivateRoute>
+        }
+      ></Route>
       <Route path="/courselist" element={<CourseList />}></Route>
       <Route path="*" element={<Error />}></Route>
     </Routes>
