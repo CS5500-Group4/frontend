@@ -1,13 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useLocalStorage } from './useLocalStorage'
 
-const ExampleContext = React.createContext();
+const RMCContext = React.createContext()
+const RMCProvider = ({ children }) => {
+  const [example, setExample] = useState('example')
 
-const ExampleProvider = ({ children }) => {
-    const [example, setExample] = useState("example");
+  const [user, setUser] = useLocalStorage('user', null)
+  const navigate = useNavigate()
 
-    return <ExampleContext.Provider value={{example, setExample}}>
-        {children}
-    </ExampleContext.Provider>;
+  const login = async (data) => {
+    console.log(data)
+    setUser(data)
+    navigate('/dashboard', { replace: true })
+  }
+
+  const logout = () => {
+    setUser(null)
+    navigate('/', { replace: true })
+  }
+
+
+
+  return <RMCContext.Provider value={{ example, setExample,user, login, logout }}>{children}</RMCContext.Provider>
 }
 
-export { ExampleProvider, ExampleContext };
+export { RMCProvider, RMCContext }

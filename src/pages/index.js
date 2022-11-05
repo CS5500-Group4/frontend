@@ -8,5 +8,6 @@ import AddCourse from "./AddCourse";
 import Dashboard from "./Dashboard";
 import AddReview from './AddReview';
 import CourseList from './CourseList';
+import PrivateRoute from './PrivateRoute';
 
-export { Home, Login, Signup, About, CourseDetail, AddCourse, Dashboard, AddReview, CourseList, Error };
+export { Home, Login, Signup, About, CourseDetail, AddCourse, Dashboard, AddReview, CourseList, Error, PrivateRoute };
