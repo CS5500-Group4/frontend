@@ -9,7 +9,6 @@ import {
   CourseDetail,
   AddCourse,
   Dashboard,
-  AddReview,
   CourseList,
   PrivateRoute,
 } from './pages'
@@ -42,14 +41,6 @@ function App() {
         element={
           <PrivateRoute>
             <AddCourse />
-          </PrivateRoute>
-        }
-      ></Route>
-      <Route
-        path="/addreview"
-        element={
-          <PrivateRoute>
-            <AddReview />
           </PrivateRoute>
         }
       ></Route>

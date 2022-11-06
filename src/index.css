@@ -33,4 +33,7 @@ body {
 	padding: 10px 0 20px 0;
 }
 
+.no_underline {
+	text-decoration: none;
+}
 

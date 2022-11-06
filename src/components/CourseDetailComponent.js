@@ -4,6 +4,7 @@ import Wrapper from '../asserts/wrappers/CourseDetailComponent'
 import Button from '@mui/material/Button'
 import { BASE_URL } from '../utils/constant'
 import axios from 'axios'
+import {AddReviewDialog} from './index'
 
 const CourseDetailComponent = () => {
   let { id } = useParams()
@@ -28,7 +29,7 @@ const CourseDetailComponent = () => {
           </h1>
           <h2>4.6/5</h2>
           <p>Based on 15 Student Reviews</p>
-          <Button variant="contained">Rate Course</Button>
+          <AddReviewDialog />
         </div>
         <div className="rating_distribution">
           <h2>Rating Distribution</h2>
