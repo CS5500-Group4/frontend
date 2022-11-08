@@ -3,6 +3,7 @@ import Wrapper from '../asserts/wrappers/DashboardComponent'
 import Button from '@mui/material/Button'
 import avatar from '../asserts/images/user.png'
 import { RMCContext } from '../context/context'
+import { Link } from 'react-router-dom'
 
 const DashboardComponent = () => {
   const { user } = React.useContext(RMCContext)
@@ -14,7 +15,9 @@ const DashboardComponent = () => {
       </div>
       <div className="action">
         <h3>I want to...</h3>
-        <Button variant="contained">Add a Course</Button>
+        <Link className="no_underline" to="/addcourse">
+          <Button variant="contained">Add a Course</Button>
+        </Link>
         <Button variant="contained">View Courses</Button>
         <Button variant="contained">Edit Profile</Button>
       </div>

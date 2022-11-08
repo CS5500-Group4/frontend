@@ -2,17 +2,9 @@ import styled from "styled-components";
 
 
 const Wrapper = styled.main`
-  .intro-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-
   .rate_review_box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -21,7 +13,7 @@ const Wrapper = styled.main`
     flex-direction: column;
     margin: 10px 20px 0px 20px;
   }
-
+  
   .submit_wrapper {
     display: flex;
     justify-content: center;
@@ -29,16 +21,13 @@ const Wrapper = styled.main`
 
   .btn_wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    margin-bottom: 50px;
   }
 
   .identity {
-    margin: 10px;
     display: flex;
-    flex-direction: column;
+    margin: 10px;
   }
 
   .sublabel {
@@ -59,17 +48,16 @@ const Wrapper = styled.main`
     padding: 15px 0 15px 10px;
     width: 370px;
     border-radius: 15px;
-    border: none;
     margin-top: 15px;
     margin-bottom: 15px;
     background: transparent;
     border: 2px solid #858585;
-    color: white;
+    color: black;
     transition: 0.3s;
   }
 
   textarea:hover{
-    border: 2px solid white;
+    border: 2px solid #1976d2;
   }
 
   .submit {
@@ -95,17 +83,6 @@ const Wrapper = styled.main`
     text-decoration: none;
     background: #3282d1;
     box-shadow:none;
-  }
-
-  footer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    position: fixed:
-    bottom: 0;
   }
 
 `

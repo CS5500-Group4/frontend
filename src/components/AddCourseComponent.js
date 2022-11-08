@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Wrapper from '../asserts/wrappers/AddCourseComponent'
 import { BASE_URL } from '../utils/constant'
 import axios from 'axios'
 import Alert from '@mui/material/Alert'
-
-const initialState = {
-  courseName: '',
-  courseNumber: '',
-  createdBy: 'test1',
-}
+import { RMCContext } from '../context/context'
 
 const AddCourseComponent = () => {
+  const { user } = useContext(RMCContext)
+  const initialState = {
+    courseName: '',
+    courseNumber: '',
+    createdBy: user.username,
+  }
   const [status, setStatus] = useState('none')
   const alertFadeIn = () => {
     setStatus('success')

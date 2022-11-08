@@ -14,16 +14,23 @@ const HomeNavbar = () => {
             <Link className="link" to="/">
               <h3 class="title">Rate My Courses</h3>
             </Link>
-            <Link className="link" to="/about">
-              <h4 class="title">About</h4>
-            </Link>
+            {user ? (
+              <Link className="link" to="/dashboard">
+                <h4 class="title">Dashboard</h4>
+              </Link>
+            ) : (
+              ''
+            )}
             <Link className="link" to="/courselist">
               <h4 class="title">Courses</h4>
+            </Link>
+            <Link className="link" to="/about">
+              <h4 class="title">About</h4>
             </Link>
           </div>
           {user ? (
             <div>
-              <Button variant="contained" size="medium" onClick={logout} >
+              <Button variant="contained" size="medium" onClick={logout}>
                 logout
               </Button>
             </div>
