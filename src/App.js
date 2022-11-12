@@ -10,6 +10,7 @@ import {
   AddCourse,
   Dashboard,
   CourseList,
+  EditProfile,
   PrivateRoute,
 } from './pages'
 
@@ -44,6 +45,7 @@ function App() {
           </PrivateRoute>
         }
       ></Route>
+      <Route path="/editprofile" element={<EditProfile />}></Route>
       <Route path="/courselist" element={<CourseList />}></Route>
       <Route path="*" element={<Error />}></Route>
     </Routes>

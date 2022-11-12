@@ -7,6 +7,7 @@ import Error from './Error';
 import AddCourse from "./AddCourse";
 import Dashboard from "./Dashboard";
 import CourseList from './CourseList';
+import EditProfile from './EditProfile';
 import PrivateRoute from './PrivateRoute';
 
-export { Home, Login, Signup, About, CourseDetail, AddCourse, Dashboard, CourseList, Error, PrivateRoute };
+export { Home, Login, Signup, About, CourseDetail, AddCourse, Dashboard, CourseList, EditProfile, Error, PrivateRoute };

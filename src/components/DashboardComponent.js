@@ -18,8 +18,12 @@ const DashboardComponent = () => {
         <Link className="no_underline" to="/addcourse">
           <Button variant="contained">Add a Course</Button>
         </Link>
-        <Button variant="contained">View Courses</Button>
-        <Button variant="contained">Edit Profile</Button>
+        <Link className="no_underline" to="/courselist">
+          <Button variant="contained">View Courses</Button>
+        </Link>
+       <Link className="no_underline" to="/editprofile">
+          <Button variant="contained">Edit Profile</Button>
+        </Link>
       </div>
 
       <div className="course">
