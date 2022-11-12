@@ -26,9 +26,15 @@ const Wrapper = styled.main`
         margin-top: 20px;
     }
 
+    span {
+        display: inline-block;
+        width: 20px;
+    }    
+
     a {
         color: white;
         transition: 0.3s;
+        text-decoration: none;
     }
 
     a:hover {
