@@ -5,14 +5,23 @@ import Alert from '@mui/material/Alert'
 import { RMCContext } from '../context/context'
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
 import VisibilityIcon from '@mui/icons-material/Visibility'
+import axios from 'axios'
 
 
 const EditProfileComponent = () => {
   const { user } = React.useContext(RMCContext)
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
+  const [status, setStatus] = useState('none')
+  
+  const alertFadeIn = () => {
+    setStatus('success')
+    setTimeout(() => {
+      setStatus('')
+    }, 2000)
+  }
 
-    const handleClickShowPassword = () => {
+  const handleClickShowPassword = () => {
     setShowPassword(!showPassword)
   }
 
@@ -20,12 +29,19 @@ const EditProfileComponent = () => {
     setPassword(e.target.value)
   }
 
+  const clearForm = () => {
+    setPassword('')
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await(`${BASE_URL}/user/${user.username}`, 
-    {headers: {'Content-Type': 'application/json'}, 
-    method: 'PUT', 
-    body: {password: password}});
+    const res = await axios.put(`${BASE_URL}/user/${user.username}`, {password: password});
+    console.log(res);
+    if (res) {
+      alertFadeIn()
+      clearForm()
+    }
+
   }
 
   return (
@@ -60,6 +76,18 @@ const EditProfileComponent = () => {
           </div>
         </form>
       </div>
+           <Alert
+        className={
+          status === 'success'
+            ? 'alert animate__animated animate__fadeInRight'
+            : status === 'none'
+            ? 'none'
+            : 'alert animate__animated  animate__fadeOutRight'
+        }
+        severity="success"
+      >
+        <strong>Password updated!</strong>
+      </Alert>
  
     </Wrapper>
   );
