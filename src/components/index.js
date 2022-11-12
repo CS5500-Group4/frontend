@@ -10,6 +10,7 @@ import DashboardComponent from './DashboardComponent'
 import AddReviewComponent from './AddReviewComponent'
 import CourseListComponent from './CourseListComponent'
 import AddReviewDialog from './AddReviewDialog'
+import EditProfileComponent from './EditProfileComponent'
 
 export {
   HomeNavbar,
@@ -23,5 +24,6 @@ export {
   DashboardComponent, 
   AddReviewComponent, 
   CourseListComponent,
-  AddReviewDialog
+  AddReviewDialog,
+  EditProfileComponent
 }
