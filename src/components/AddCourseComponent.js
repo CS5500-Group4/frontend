@@ -32,6 +32,7 @@ const AddCourseComponent = () => {
   const addCourse = async (e) => {
     e.preventDefault()
     const response = await axios.post(`${BASE_URL}/course`, courseDetail)
+
     if (response) {
       alertFadeIn()
       clearForm()

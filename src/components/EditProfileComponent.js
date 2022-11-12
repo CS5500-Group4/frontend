@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import Wrapper from '../asserts/wrappers/EditProfileComponent'
 import { BASE_URL } from '../utils/constant'
 import Alert from '@mui/material/Alert'
@@ -13,7 +13,7 @@ const EditProfileComponent = () => {
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   const [status, setStatus] = useState('none')
-  
+
   const alertFadeIn = () => {
     setStatus('success')
     setTimeout(() => {
