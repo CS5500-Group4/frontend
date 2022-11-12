@@ -1,37 +1,32 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Button from '@mui/material/Button'
 import Wrapper from '../asserts/wrappers/AddReviewComponent'
+import { RMCContext } from '../context/context'
 
-const initialState = {
-  rating: '',
-  reviewContent: '',
-  identity: '',
-}
-
-const AddReviewComponent = () => {
-  const [rating, setRating] = useState('')
-  const [reviewContent, setReviewContent] = useState('')
-  const [identity, setIdentity] = useState('')
-
-  const handleChangeRating = (e) => {
-    setRating(e.target.value)
+const AddReviewComponent = (props) => {
+  const { onSubmitReview } = props
+  const { user } = React.useContext(RMCContext)
+  const initialState = {
+    review: '',
+    rating: '',
+    reviewBy: user.username,
+    isAnonymous: '',
   }
+  const [reviewForm, setReviewForm] = useState(initialState)
 
-  const handleChangeReviewContent = (e) => {
-    setReviewContent(e.target.value)
-  }
-
-  const handleChangeIdentity = (e) => {
-    setIdentity(e.target.value)
+  // Handle on Change for review form
+  const handleOnChangeForm = (e) => {
+    if (e.target.name === 'rating') {
+      setReviewForm({ ...reviewForm, [e.target.name]: parseInt(e.target.value, 10) })
+    }
+    setReviewForm({ ...reviewForm, [e.target.name]: e.target.value })
   }
 
   return (
     <Wrapper>
       <div className="form_wrapper">
-        <form onSubmit="">
+        <form onSubmit={(e) => onSubmitReview(e, reviewForm)}>
           <div className="rate_review_box">
-            <div className="form_inner_wrapper" onChange={handleChangeRating}>
+            <div className="form_inner_wrapper" onChange={handleOnChangeForm}>
               <label for="course_rating">Rate the Course on a scale of 1 to 5:</label>
               <label className="sublabel">
                 <input type="radio" value="5" name="rating" />5 - Take the course, now!
@@ -55,24 +50,24 @@ const AddReviewComponent = () => {
                 className="textarea"
                 rows="10"
                 cols="60"
-                name="reviewDescription"
+                name="review"
                 autoComplete="off"
                 placeholder="Example: I really enjoyed the CS5500 course last semester..."
-                value={reviewContent.reviewContent}
-                onChange={handleChangeReviewContent}
+                value={reviewForm.review}
+                onChange={handleOnChangeForm}
                 required
                 minLength="1"
                 maxLength="1000"
               />
             </div>
           </div>
-          <div className="identity" onChange={handleChangeIdentity}>
+          <div className="identity" onChange={handleOnChangeForm}>
             <label className="sublabel">
-              <input type="radio" value="username" name="identity" />
-              As Jaying
+              <input type="radio" value="false" name="isAnonymous" />
+              As {user.username}
             </label>
             <label className="sublabel">
-              <input type="radio" value="anonymous" name="identity" />
+              <input type="radio" value="true" name="isAnonymous" />
               Anonymously
             </label>
           </div>

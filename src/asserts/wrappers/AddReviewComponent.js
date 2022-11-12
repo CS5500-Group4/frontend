@@ -85,5 +85,16 @@ const Wrapper = styled.main`
     box-shadow:none;
   }
 
+  .alert {
+    width: 200px;
+    position: fixed;
+    top: 120px;
+    right: 70px;
+  }
+
+  .none {
+    display: none;
+  }
+
 `
 export default Wrapper;
