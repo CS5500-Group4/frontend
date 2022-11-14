@@ -13,10 +13,19 @@ const AddCourseComponent = () => {
     createdBy: user.username,
   }
   const [status, setStatus] = useState('none')
+  const [failStatus, setFailStatus] = useState('none')
+
   const alertFadeIn = () => {
     setStatus('success')
     setTimeout(() => {
       setStatus('')
+    }, 2000)
+  }
+
+   const failAlertFadeIn = () => {
+    setFailStatus('error')
+    setTimeout(() => {
+      setFailStatus('')
     }, 2000)
   }
 
@@ -31,12 +40,15 @@ const AddCourseComponent = () => {
 
   const addCourse = async (e) => {
     e.preventDefault()
-    const response = await axios.post(`${BASE_URL}/course`, courseDetail)
+    const res = await axios.post(`${BASE_URL}/course`, courseDetail)
 
-    if (response) {
+    .then((res) => {
       alertFadeIn()
-      clearForm()
-    }
+    })
+    .catch((error) => {
+      failAlertFadeIn()
+    })
+    clearForm()
   }
 
   return (
@@ -91,10 +103,19 @@ const AddCourseComponent = () => {
         <strong>Add success!</strong>
       </Alert>
 
-      <footer>
-        <p>San Jose, California, USA</p>
-        <p>Copyright © 2022 All Rights Reserved</p>
-      </footer>
+      <Alert
+        className={
+          failStatus === 'error'
+            ? 'alert animate__animated animate__fadeInRight'
+            : failStatus === 'none'
+            ? 'none'
+            : 'alert animate__animated  animate__fadeOutRight'
+        }
+        severity="error"
+      >
+        <strong>Course already exists!</strong>
+      </Alert>
+
     </Wrapper>
   )
 }
